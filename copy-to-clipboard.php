@@ -1,15 +1,15 @@
 <?php
 
 /**
- * Plugin Name: Master Clipboard
- * Description: Copy anything by using Master Clipboard
- * Plugin URI: https://pixarlabs.com
+ * Plugin Name: Copy to Clipboard
+ * Description: Copy anything by using Copy to Clipboard
+ * Plugin URI: https://github.com/litonarefin/copy-to-clipboard
  * Author: Pixar Labs
  * Version: 1.0.0
- * Author URI: https://pixarlabs.com/master-clipboard
+ * Author URI: https://jeweltheme.com/
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain: master-clipboard
+ * Text Domain: copy-to-clipboard
  * Domain Path: /languages
  *
  * @fs_premium_only /Pro/
@@ -76,14 +76,5 @@ if (! defined('COPY_TO_CLIPBOARD_URI') ) {
 
 
 if (! class_exists('\\COPYTOCLIPBOARD\\Copy_To_Clipboard') ) {
-    // // Autoload
-    // require_once dirname( __FILE__ ) . '/vendor/autoload.php';
-    // Instantiate WP Adminify Class
-    include_once dirname(__FILE__) . '/class-master-clipboard.php';
+    include_once dirname(__FILE__) . '/class-copy-to-clipboard.php';
 }
-
-// Activation and Deactivation hooks
-// if (class_exists('\\MasterClipboard\\Master_Clipboard') ) {
-//     register_activation_hook(MASTER_CLIPBOARD_FILE, ['\\MasterClipboard\\Master_Clipboard', 'master_clipboard_activation_hook' ]);
-//     register_deactivation_hook(MASTER_CLIPBOARD_FILE, ['\\MasterClipboard\\Master_Clipboard', 'master_clipboard_deactivation_hook' ]);
-// }

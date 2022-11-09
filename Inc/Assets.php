@@ -12,8 +12,7 @@ class Assets
 
     public function __construct()
     {
-        // add_action('admin_enqueue_scripts', [$this, 'master_clipboard_admin_scripts'], 100);
-        add_action('wp_enqueue_scripts', [$this, 'master_clipboard_enqueue_scripts'], 100);
+        add_action('wp_enqueue_scripts', [$this, 'copy_to_clipboard_enqueue_scripts'], 100);
     }
 
 
@@ -26,7 +25,15 @@ class Assets
     }
 
 
-    public function master_clipboard_enqueue_scripts(){
+    public function copy_to_clipboard_enqueue_scripts(){
+
+        // Style
+        wp_register_style(
+            'copy-to-clipboard',
+            COPY_TO_CLIPBOARD_ASSETS . 'css/copy-to-clipboard' . self::assets_ext('.css')
+        );
+
+        // Script
         wp_register_script(
             'copy-to-clipboard',
             COPY_TO_CLIPBOARD_ASSETS . 'js/clipboard' . self::assets_ext('.js'),
@@ -34,51 +41,31 @@ class Assets
             COPY_TO_CLIPBOARD_VER,
             true
         );
+
+        // Enqueue
+        wp_enqueue_style('copy-to-clipboard');
         wp_enqueue_script('copy-to-clipboard');
 
         wp_add_inline_script(
             'copy-to-clipboard',
-            "
-            // var btn = document.getElementById('btn');
-            // var clipboard = new ClipboardJS(btn);
+            'let copy2clipBtn = document.querySelector(".copy2clip-btn");
+            var clipboard = new ClipboardJS(".copy2clip-btn");
+            let clearCopyText;
 
-            // clipboard.on('success', function (e) {
-            //     console.info('Action:', e.action);
-            //     console.info('Text:', e.text);
-            //     console.info('Trigger:', e.trigger);
-            // });
-
-            // clipboard.on('error', function (e) {
-            //     console.info('Action:', e.action);
-            //     console.info('Text:', e.text);
-            //     console.info('Trigger:', e.trigger);
-            // });
-
-            var clipboard = new ClipboardJS('.btn');
-            clipboard.on('success', function (e) {
-                console.info('Action:', e.action);
-                console.info('Text:', e.text);
-                console.info('Trigger:', e.trigger);
+            clipboard.on("success", function (e) {
+                copy2clipBtn.innerHTML = "Copied";
+                clearInterval(clearCopyText);
+                clearCopyText = setTimeout(() => {
+                    copy2clipBtn.innerHTML = "Copy";
+                }, 5000);
             });
 
-            clipboard.on('error', function (e) {
-                console.info('Action:', e.action);
-                console.info('Text:', e.text);
-                console.info('Trigger:', e.trigger);
-            });
-
-            "
+            clipboard.on("error", function (e) {
+                console.log(e);
+            });'
         );
     }
 
-
-    public function master_clipboard_js_object(){
-        return array(
-            'ajax_url'       => admin_url('admin-ajax.php'),
-            'security_nonce' => wp_create_nonce('adminify-admin-bar-security-nonce'),
-            'notice_nonce'   => wp_create_nonce('adminify-notice-nonce'),
-        );
-    }
     /**
      * Returns the singleton instance of the class.
      */
