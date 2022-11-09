@@ -4,15 +4,13 @@
  * Plugin Name: Copy to Clipboard
  * Description: Copy anything by using Copy to Clipboard
  * Plugin URI: https://github.com/litonarefin/copy-to-clipboard
- * Author: Pixar Labs
+ * Author: Jewel Theme
  * Version: 1.0.0
  * Author URI: https://jeweltheme.com/
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: copy-to-clipboard
  * Domain Path: /languages
- *
- * @fs_premium_only /Pro/
  */
 
 

@@ -14,19 +14,28 @@ Text Copy to Clipboard on WordPress way
 Copy to Clipboard is a WordPress plugin which facilitates with copy text on clipboard to paste it anywhere on your computer. It can be your best tool for showcase specific Text, Textarea, Code Snippet, Embed Code and so many options on your website.
 
 
+== # Copy with Shortcode
+
+Use the shortcode `[copy2clip text_to_copied="Hello, this content will be copied" btn_copy_text="Copy" btn_clip_text="copy"]` shortcode
+
+=== Bug reports
+For bug resports “Copy to Clipboard” are welcomed, please use WordPress support forum by opening support ticket.
+
+* [Github Source](https://github.com/litonarefin/copy-to-clipboard)
+
+
 == Installation ==
-1. Upload the Downloaded "copy-to-cliboard.zip" Folder to the `/wp-content/plugins/` directory
-2. Or, UNZIP "copy-to-cliboard.zip" folder and Upload copy-to-cliboard on "wp-content/plugins/" folder via FTP or Copy and
-Paste on your Local Computer
+1. Upload the Downloaded "copy-to-clipboard.zip" Folder to the `/wp-content/plugins/` directory
+2. Or, UNZIP "copy-to-clipboard.zip" file and upload "copy-to-clipboard" folder on "wp-content/plugins/" folder via FTP or Copy and Paste on your Local Computer
 
 
 == Screenshots ==
-1. WP Adminify overview
-2. Admin Columns module
-3. Page, Post, Post type, & Media Folders
-4. Google Pagespeed Insights For WordPress
-5. Disable Admin Notices
-6. Dashboard Menu Editor
-7. WordPress Login Customizer
-8. Activity Logs For WordPress Website
-9. Disable Comments for WordPress
+1. Shortcode Presentation
+2. Output of Copy to Clipboard
+
+
+
+
+== Changelog ==
+= 1.0.0 (9-11-22) =
+* Initial release
