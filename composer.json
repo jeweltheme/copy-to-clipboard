@@ -1,0 +1,23 @@
+{
+    "name": "litonarefin/copy-to-clipboard",
+    "autoload": {
+        "psr-4": {
+            "COPYTOCLIPBOARD\\Inc\\": "Inc/",
+            "COPYTOCLIPBOARD\\Inc\\Admin\\": "Inc/Admin",
+            "COPYTOCLIPBOARD\\Libs\\": "Libs/",
+            "COPYTOCLIPBOARD\\Libs\\License\\": "Libs/License/"
+        },
+        "files": [
+            "Libs/License/manager.php",
+            "Inc/functions.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Jewel Theme",
+            "email": "support@jeweltheme.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {}
+}

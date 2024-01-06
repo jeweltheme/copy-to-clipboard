@@ -1,0 +1,146 @@
+.copy-to-clipboard-license-popup,
+.copy-to-clipboard-license-popup * {
+    box-sizing: border-box;
+}
+
+.copy-to-clipboard-license-popup .copy-to-clipboard-license-popup--wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999;
+    background: rgba(27, 28, 29, 0.6156862745);
+    display: none;
+}
+
+.copy-to-clipboard-license-popup .copy-to-clipboard-license-popup--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.copy-to-clipboard-license-popup .copy-to-clipboard-license-popup--container-inner {
+    background: #fff;
+    width: 500px;
+    max-width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0px 0px 76px rgba(41, 42, 48, 0.25);
+}
+
+.copy-to-clipboard-license-popup .wc-licelse--close {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    right: -26px;
+    top: -26px;
+    border: none !important;
+    background: #fff !important;
+    box-shadow: -4px 4px 40px rgba(35, 36, 40, 0.4) !important;
+    padding: 0 !important;
+    outline: none !important;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.copy-to-clipboard-license-popup .wc-licelse--close svg {
+    width: 24px;
+    height: 24px;
+}
+
+.copy-to-clipboard-license-actions button:not(.wc-btn-active) {
+    display: none;
+}
+
+.copy-to-clipboard-license-popup.copy-to-clipboard-license-status--active .copy-to-clipboard-license-status td {
+    color: #16b95c;
+}
+
+.copy-to-clipboard-license-popup--notice {
+    padding: 14px 14px;
+    border-left: 3px solid;
+    margin-top: 0px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.5;
+    display: none;
+}
+
+.copy-to-clipboard-license-popup--notice.copy-to-clipboard-license--notice-success {
+    background: #e8f1ec;
+    border-color: #16b95c;
+    color: #16b95c;
+}
+
+.copy-to-clipboard-license-popup--notice.copy-to-clipboard-license--notice-error {
+    background: #f1e8e8;
+    border-color: #e35555;
+    color: #d72f2f;
+}
+
+.copy-to-clipboard-license--loader-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: inherit;
+    backdrop-filter: blur(4px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+.copy-to-clipboard-license--loader-wrapper.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.copy-to-clipboard-license--loader {
+    width: 40px;
+    height: 40px;
+}
+
+.copy-to-clipboard-license--loader:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 5px solid #1e75e1;
+    border-color: #1e75e1 transparent #1e75e1 transparent;
+    animation: copy-to-clipboard-license--loader 1.2s linear infinite;
+}
+
+@keyframes copy-to-clipboard-license--loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.copy-to-clipboard-license-settings-page .copy-to-clipboard-license-popup--wrapper {
+    position: relative;
+    display: block;
+    background: none;
+    z-index: unset;
+}
+
+.copy-to-clipboard-license-settings-page .copy-to-clipboard-license-popup--container {
+    display: block;
+}
+
+.copy-to-clipboard-license-settings-page .copy-to-clipboard-license-popup--container-inner {
+    background: none;
+    box-shadow: none;
+    border-radius: none;
+}

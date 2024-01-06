@@ -1,0 +1,11 @@
+# Directories
+/.wordpress-org
+/.git
+/.github
+/node_modules
+
+
+# Files
+.gitattributes
+.distignore
+.gitignore

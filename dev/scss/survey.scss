@@ -1,0 +1,177 @@
+@import "./common/variables";
+  
+/** Overlay */
+/** JS */
+@keyframes copy-to-clipboard-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.copy-to-clipboard-deactivate-survey-modal {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -40px;
+    width: 100%;
+    max-width: 635px;
+    border-radius: 5px;
+    background-color: $survey_modal_bg;
+    color: $survey_modal_text;
+    display: block;
+    z-index: 9999999999999;
+
+    header {
+        box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+        padding: 3px 6px 3px 11px;
+    }
+
+    .copy-to-clipboard-deactivate-info {
+        font-weight: 500;
+        font-size: 14px;
+        padding-top: 32px;
+        text-align: left;
+        padding-left: 16px;
+        padding-bottom: 23px;
+        line-height: 1.5;
+    }
+}
+
+.copy-to-clipboard-deactivate-input-wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+
+    .other {
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .copy-to-clipboard-feedback-text {
+        width: 80%;
+        padding: 7px 14px;
+    }
+
+    .copy-to-clipboard-deactivate-feedback-dialog-input {
+        float: right;
+        margin-block: 0;
+        margin-inline: 0 15px;
+        box-shadow: none;
+
+        &:not(:checked)~.copy-to-clipboard-deactivate-feedback-text {
+            display: none;
+        }
+    }
+
+    .copy-to-clipboard-deactivate-feedback-text {
+        background-color: $survey_feedback_bg;
+        color: $survey_feedback_text;
+        margin-block: 10px 0;
+        margin-inline: 30px 0;
+        padding: 5px;
+        box-shadow: none;
+        width: 45%;
+    }
+
+    .copy-to-clipboard-deactivate-feedback-dialog-label {
+        display: block;
+        font-size: 13px;
+    }
+}
+
+.copy-to-clipboard-deactivate-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-right: 40px;
+}
+
+.copy-to-clipboard-dialog-lightbox-skip {
+    border: 0;
+    cursor: pointer;
+    padding: 0px 15px;
+}
+
+.copy-to-clipboard-dialog-lightbox-submit {
+    background-color: $survey_modal_submit_bg;
+    border-radius: 3px;
+    color: $survey_submit;
+    line-height: 1;
+    padding: 12px 20px;
+    font-size: 13px;
+    width: 180px;
+    height: 38px;
+    border: 0;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+        background: #263580;
+    }
+}
+
+form.copy-to-clipboard-deactivate-form-wrapper {
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.copy-to-clipboard-deactivate-content-wrapper {
+    padding: 3px 6px 3px 24px;
+}
+
+.copy-to-clipboard-deactivate-survey-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    img {
+        width: 25px;
+    }
+}
+
+.copy-to-clipboard-deactivate-survey-overlay {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(1px);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: $survey_modal_overlay_bg;
+}
+
+.copy-to-clipboard-deactivate-survey-is-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#copy-to-clipboard-dialog-lightbox-submit.copy-to-clipboard-loading {
+    &:before {
+        position: absolute;
+        display: inline-block;
+        content: "\f463";
+        font: 16px dashicons;
+        margin: -2px -20px;
+        animation: copy-to-clipboard-rotation 2s linear infinite;
+    }
+}

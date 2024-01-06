@@ -1,0 +1,73 @@
+# https://github.com/marketplace/actions/wordpress-plugin-deploy
+name: Deploy to WordPress.org
+
+# on:
+#   push:
+#     branches:
+#       - main
+# on:
+#   push:
+#     tags:
+#     - "*"
+
+on:
+  release:
+    types: [published]
+jobs:
+  new_tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run clean.sh to generate zip file
+        working-directory: ${{ github.workspace }}/
+        run: bash ./clean.sh
+
+      - name: Upload zip file
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ secrets.SLUG }}-pro
+          path: "built/${{ secrets.SLUG }}-pro.zip"
+
+      - name: Unzip the contents
+        run: unzip built/${{ secrets.SLUG }}-pro -d plugin
+
+      - name: Run code-spliter.js for search and replace
+        run: node code-spliter.js
+
+      - name: WordPress Plugin Deploy
+        id: deploy
+        uses: 10up/action-wordpress-plugin-deploy@stable
+        with:
+          generate-zip: true
+          dry-run: false
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SLUG: ${{ secrets.SLUG }} # optional, remove if GitHub repo name matches SVN slug, including capitalization
+          BUILD_DIR: built/${{ secrets.SLUG }}-free
+
+      - name: WordPress.org plugin asset/readme update
+        uses: 10up/action-wordpress-plugin-asset-update@stable
+        env:
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          # ASSETS_DIR: .wordpress-org
+          IGNORE_OTHER_FILES: true
+
+
+      # - name: Upload release assets
+      #   uses: actions/upload-release-asset@v1
+      #   env:
+      #     GITHUB_TOKEN: {{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     upload_url: ${{ github.event.release.upload_url }}
+      #     asset_path: ${{ steps.deploy.outputs.zip-path }}
+      #     asset_name: ${{ github.event.repository.name }}.zip
+      #     asset_content_type: application/zip
+      - name: Upload Published zip file
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ secrets.SLUG }}
+          path: ${{ steps.deploy.outputs.zip-path }}
