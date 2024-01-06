@@ -1,0 +1,582 @@
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./dev/scss/sdk.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/* Survey Variables */
+/* Survey Variables */
+/* Recommended */
+/* Review */
+/* Popup */
+/* Subscribe form */
+/*---- badge ---*/
+/* Disable Field */
+/* Start of Overlay Upgrade Popup  */
+/* responsive  */
+/* End of Overlay Upgrade Popup  */
+.copy-to-clipboard .mt0 {
+  margin-top: 0;
+}
+.copy-to-clipboard #TB_window {
+  top: 43% !important;
+  width: 772px !important;
+  height: 690px !important;
+}
+.copy-to-clipboard #TB_window iframe {
+  width: 772px !important;
+  height: 690px !important;
+}
+.copy-to-clipboard #plugin-information-scrollable {
+  height: calc(100% - 65px) !important;
+}
+.copy-to-clipboard .copy-to-clipboard-recommended-wrapper .mr-0 {
+  margin: 0 !important;
+}
+.copy-to-clipboard .copy-to-clipboard-recommended-wrapper .plugin-card .name {
+  margin-left: 148px;
+  margin-right: inherit !important;
+}
+.copy-to-clipboard .copy-to-clipboard-recommended-wrapper .plugin-card .desc {
+  margin-left: 148px;
+  margin-right: inherit !important;
+}
+.copy-to-clipboard .copy-to-clipboard-recommended-wrapper .button:not(.update-now).updating-message:before {
+  margin: 6px 10px 0px -3px !important;
+}
+.copy-to-clipboard .copy-to-clipboard-recommended-wrapper .button:not(.update-now).updated-message:before {
+  margin: 6px 10px 0px -3px !important;
+}
+.copy-to-clipboard .copy-to-clipboard-recommended-wrapper .button:not(.update-now).installed:before {
+  margin: 6px 10px 0px -3px !important;
+}
+.copy-to-clipboard .copy-to-clipboard-recommended-wrapper .button:not(.update-now).installing:before {
+  margin: 6px 10px 0px -3px !important;
+}
+.copy-to-clipboard .copy-to-clipboard-recommended-wrapper .plugin-status-active {
+  color: #00BA88;
+}
+.copy-to-clipboard .copy-to-clipboard-recommended-wrapper .plugin-status-inactive {
+  color: #F4B740;
+}
+.copy-to-clipboard .copy-to-clipboard-recommended-wrapper .plugin-status-not-install {
+  color: #1d2327;
+}
+.copy-to-clipboard .copy-to-clipboard-recommended-wrapper .plugin-status {
+  line-height: 34px;
+}
+.copy-to-clipboard .copy-to-clipboard-recommended-wrapper .hide {
+  display: none;
+}
+.copy-to-clipboard #wpbody-content .notice-copy-to-clipboard {
+  padding: 15px;
+  position: relative;
+}
+.copy-to-clipboard #wpbody-content .notice-plugin-review {
+  padding: 15px;
+  position: relative;
+}
+.copy-to-clipboard #wpbody-content .notice-plugin-review .button:not(.copy-to-clipboard-notice-dismiss) {
+  margin-right: 5px;
+}
+.copy-to-clipboard #wpbody-content .notice-plugin-review .copy-to-clipboard-notice-dismiss {
+  box-shadow: none;
+}
+.copy-to-clipboard #wpbody-content .copy-to-clipboard-notice-plugin-popup {
+  max-width: 850px;
+  min-height: 300px;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: auto;
+  border-radius: 5px !important;
+  transform: translate(-50%, -50%);
+  border: 0;
+  position: fixed;
+  z-index: 99999;
+  box-shadow: 0px 0px 54px 0px rgba(20, 20, 42, 0.3) !important;
+}
+.copy-to-clipboard #wpbody-content .copy-to-clipboard-notice-plugin-popup .copy-to-clipboard-notice-dismiss {
+  box-shadow: none;
+  float: right;
+  cursor: pointer;
+}
+.copy-to-clipboard #wpbody-content .copy-to-clipboard-notice-subscribe {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+.copy-to-clipboard .upgrade-pro-popup {
+  gap: 15px;
+  background: #fff;
+  padding: 40px !important;
+}
+.copy-to-clipboard .upgrade-pro-popup .upst-body {
+  display: flex;
+}
+.copy-to-clipboard .upgrade-pro-popup .upst-body .content-body {
+  color: rgba(78, 75, 102, 0.72);
+}
+.copy-to-clipboard .upgrade-pro-popup .upst-body .content-body h4 {
+  display: flex;
+  color: #FB0066;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  gap: 10px;
+  font-size: 22px;
+  line-height: 32px;
+}
+.copy-to-clipboard .upgrade-pro-popup .upst-body .content-body h3 {
+  color: #14142B;
+  letter-spacing: 1px;
+  font-size: 28px;
+}
+.copy-to-clipboard .upgrade-pro-popup .upst-body .content-body h3 span {
+  color: #0347ff;
+}
+.copy-to-clipboard .upgrade-pro-popup .upst-body .content-body p {
+  font-weight: normal !important;
+  line-height: 22px !important;
+  font-size: 16px !important;
+}
+.copy-to-clipboard .upgrade-pro-popup .upst-body .content-body ul li {
+  margin: 10px 0;
+  line-height: 22px;
+  padding-left: 30px;
+}
+.copy-to-clipboard .upgrade-pro-popup .upst-body .content-body ul li:before {
+  color: #fff;
+  top: 2px;
+  left: 1px;
+  font-size: 17px;
+}
+.copy-to-clipboard .upgrade-pro-popup .upst-body .content-body ul li:after {
+  position: absolute;
+  content: "";
+  background: #00ba88;
+  border-radius: 50px;
+  width: 18px;
+  height: 18px;
+  top: 3px !important;
+  left: 1px;
+}
+.copy-to-clipboard .upgrade-pro-popup .upst-body .content-body ul li span {
+  color: #14142B !important;
+}
+.copy-to-clipboard .upgrade-pro-popup .upst-body .content-body .upgrade-btn {
+  background: #0347ff;
+  color: #fff;
+  font-size: 18px;
+  border: 0 !important;
+  border-radius: 7px;
+  padding: 5px 25px;
+}
+.copy-to-clipboard .upgrade-pro-popup .col {
+  flex-basis: 50%;
+}
+.copy-to-clipboard .upgrade-pro-popup .col:nth-child(1) {
+  padding-right: 20px;
+  padding-top: 120px;
+}
+.copy-to-clipboard .upgrade-pro-popup .col:nth-child(1) img {
+  max-width: 100%;
+}
+.copy-to-clipboard .upgrade-pro-popup .col:nth-child(2) {
+  padding-left: 20px;
+}
+.copy-to-clipboard .upgrade-pro-popup ul li {
+  position: relative;
+  list-style: none;
+  padding-left: 25px;
+  position: relative;
+  list-style: none;
+  padding-left: 25px;
+}
+.copy-to-clipboard .upgrade-pro-popup ul li:before {
+  position: absolute;
+  content: "\f15e";
+  font-family: dashicons;
+  font-size: 19px;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.copy-to-clipboard .upgrade-pro-popup .upst-footer ul {
+  display: flex;
+  padding-top: 60px;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.copy-to-clipboard .upgrade-pro-popup .upst-footer ul li a {
+  color: rgba(78, 75, 102, 0.72) !important;
+}
+.copy-to-clipboard .upgrade-pro-popup .upst-footer ul li a:hover {
+  color: #0347FF !important;
+}
+.copy-to-clipboard .upgrade-pro-popup .upst-footer ul li:before {
+  font-size: 22px;
+  color: #00BA88;
+}
+.copy-to-clipboard .copy-to-clipboard-notice-plugin-popup .copy-to-clipboard-notice-dismiss {
+  border: 0 !important;
+  outline: none !important;
+  background: transparent !important;
+}
+.copy-to-clipboard .copy-to-clipboard-notice-plugin-popup .copy-to-clipboard-notice-dismiss:before {
+  content: "×" !important;
+  font-size: 30px !important;
+  height: 22px !important;
+  width: 22px !important;
+  color: rgba(78, 75, 102, 0.72) !important;
+}
+.copy-to-clipboard body.copy-to-clipboard-popup-overlay {
+  position: relative;
+  height: auto;
+}
+.copy-to-clipboard body.copy-to-clipboard-popup-overlay:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+}
+.copy-to-clipboard .copy-to-clipboard-notice-subscribe img {
+  width: 50px;
+  max-width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+.copy-to-clipboard .copy-to-clipboard-notice-subscribe h4 {
+  margin-top: 0;
+}
+.copy-to-clipboard .copy-to-clipboard-notice-subscribe-input {
+  margin-right: 15px;
+}
+.copy-to-clipboard .copy-to-clipboard-badge:after {
+  color: #fff;
+  position: absolute;
+  font-size: 11px;
+  padding: 1px 7px;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 3px;
+  display: none;
+}
+.copy-to-clipboard .copy-to-clipboard-badge-pro:after {
+  content: "Pro";
+  background: darkorange;
+}
+.copy-to-clipboard .copy-to-clipboard-badge-ultimate:after {
+  content: "Ultimate";
+  background: blueviolet;
+  right: -60px;
+}
+.copy-to-clipboard .image-choose-opt.disabled .disabled-text {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 5px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(85, 85, 85, 0.7);
+  color: #fff;
+}
+.copy-to-clipboard .form-table tr.disabled {
+  position: relative;
+}
+.copy-to-clipboard .form-table tr.disabled > * {
+  opacity: 0.6;
+}
+.copy-to-clipboard .form-table tr.disabled > * input {
+  pointer-events: none;
+}
+.copy-to-clipboard .form-table tr.disabled > * select {
+  pointer-events: none;
+}
+.copy-to-clipboard .form-table tr.disabled > * textarea {
+  pointer-events: none;
+}
+.copy-to-clipboard .form-table tr.disabled > * button {
+  pointer-events: none;
+}
+.copy-to-clipboard .form-table tr.disabled:hover .copy-to-clipboard-badge:after {
+  display: inline;
+}
+.copy-to-clipboard:root {
+  --copy-to-clipboard-popup-color: #ff631a;
+}
+.copy-to-clipboard .copy-to-clipboard-popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999999 !important;
+}
+.copy-to-clipboard .copy-to-clipboard-popup * {
+  animation: none 0s ease 0s 1 normal none running;
+  backface-visibility: visible;
+  background: transparent none repeat 0 0 / auto auto padding-box border-box scroll;
+  border: medium none currentcolor;
+  border-collapse: separate;
+  -o-border-image: none;
+     border-image: none;
+  border-radius: 0;
+  border-spacing: 0;
+  bottom: auto;
+  box-shadow: none;
+  box-sizing: content-box;
+  caption-side: top;
+  clear: none;
+  clip: auto;
+  color: #000;
+  -moz-columns: auto;
+       columns: auto;
+  -moz-column-count: auto;
+       column-count: auto;
+  -moz-column-fill: balance;
+       column-fill: balance;
+  -moz-column-gap: normal;
+       column-gap: normal;
+  -moz-column-rule: medium none currentcolor;
+       column-rule: medium none currentcolor;
+  -moz-column-span: 1;
+       column-span: 1;
+  -moz-column-width: auto;
+       column-width: auto;
+  content: normal;
+  counter-increment: none;
+  counter-reset: none;
+  cursor: auto;
+  display: inline;
+  empty-cells: show;
+  float: none;
+  font-family: serif;
+  font-size: medium;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: normal;
+  height: auto;
+  -webkit-hyphens: none;
+          hyphens: none;
+  left: auto;
+  letter-spacing: normal;
+  list-style: disc outside none;
+  margin: 0;
+  max-height: none;
+  max-width: none;
+  min-height: 0;
+  min-width: 0;
+  opacity: 1;
+  orphans: 2;
+  outline: medium none currentcolor;
+  overflow: visible;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding: 0;
+  page-break-after: auto;
+  page-break-before: auto;
+  page-break-inside: auto;
+  perspective: none;
+  perspective-origin: 50% 50%;
+  position: static;
+  right: auto;
+  -moz-tab-size: 8;
+    -o-tab-size: 8;
+       tab-size: 8;
+  table-layout: auto;
+  text-align: left;
+  -moz-text-align-last: auto;
+       text-align-last: auto;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  top: auto;
+  transform: none;
+  transform-origin: 50% 50% 0;
+  transform-style: flat;
+  transition: none 0s ease 0s;
+  vertical-align: baseline;
+  visibility: visible;
+  white-space: normal;
+  widows: 2;
+  width: auto;
+  word-spacing: normal;
+  z-index: auto;
+  all: initial;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.copy-to-clipboard .copy-to-clipboard-popup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.copy-to-clipboard .copy-to-clipboard-popup-modal {
+  width: 600px;
+  max-width: 600px !important;
+  height: 600px;
+  max-height: 600px !important;
+  color: white;
+  background: #222;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  transform: scale(0.9);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.copy-to-clipboard .copy-to-clipboard-popup-modal-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 50px;
+  cursor: pointer;
+  color: var(--jltmapfy-popup-color);
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  opacity: 0.5;
+}
+.copy-to-clipboard .copy-to-clipboard-popup-modal-close:hover {
+  opacity: 1;
+}
+.copy-to-clipboard .copy-to-clipboard-popup-modal-footer {
+  width: 100%;
+  height: 225px;
+  max-height: 225px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px 0;
+}
+.copy-to-clipboard .copy-to-clipboard-popup-countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.copy-to-clipboard .copy-to-clipboard-popup-countdown-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  line-height: 1.2;
+}
+.copy-to-clipboard .copy-to-clipboard-popup-countdown-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.copy-to-clipboard .copy-to-clipboard-popup-countdown-time > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+.copy-to-clipboard .copy-to-clipboard-popup-countdown-time > div > span {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.copy-to-clipboard .copy-to-clipboard-popup-countdown-time > div > span:nth-child(1) {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  height: 40px;
+  width: 45px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.copy-to-clipboard .copy-to-clipboard-popup-countdown-time > div > span:nth-child(2) {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+.copy-to-clipboard .copy-to-clipboard-popup-countdown-time > span {
+  font-size: 50px;
+  color: white;
+  margin-top: -25px;
+}
+.copy-to-clipboard .copy-to-clipboard-popup-button {
+  height: 50px;
+  background: var(--copy-to-clipboard-popup-color);
+  color: #222;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+  padding: 0 30px;
+  margin: 20px 0;
+  transition: 0.2s;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+.copy-to-clipboard .copy-to-clipboard-popup-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+}
+.copy-to-clipboard .copy-to-clipboard-popup-button:hover {
+  color: white;
+}
+.copy-to-clipboard .copy-to-clipboard-popup-button:hover:after {
+  width: 100%;
+}
+.copy-to-clipboard .copy-to-clipboard-wwc > p {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 20px;
+}
+.copy-to-clipboard .copy-to-clipboard-wwc-content {
+  margin-bottom: 25px;
+  color: #646970;
+}
+@media (max-width: 576px) {
+  .copy-to-clipboard .copy-to-clipboard-popup-countdown {
+    transform: scale(0.99);
+  }
+}
