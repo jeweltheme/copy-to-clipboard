@@ -9,6 +9,7 @@ use COPYTOCLIPBOARD\Inc\Classes\Notifications\Notifications;
 use COPYTOCLIPBOARD\Inc\Classes\Pro_Upgrade;
 use COPYTOCLIPBOARD\Inc\Classes\Upgrade_Plugin;
 use COPYTOCLIPBOARD\Inc\Classes\Feedback;
+use COPYTOCLIPBOARD\Inc\Classes\Admin_Menu;
 
 /**
  * Main Class
@@ -141,6 +142,7 @@ if ( ! class_exists( '\COPYTOCLIPBOARD\Copy_To_Clipboard' ) ) {
 			new Notifications();
 			new Featured();
 			new Feedback();
+			new Admin_Menu();
 		}
 
 
@@ -166,10 +168,10 @@ if ( ! class_exists( '\COPYTOCLIPBOARD\Copy_To_Clipboard' ) ) {
 			load_textdomain( $domain, WP_LANG_DIR . '/' . $domain . '/' . $domain . '-' . $locale . '.mo' );
 			load_plugin_textdomain( $domain, false, dirname( COPYTOCLIPBOARD_BASE ) . '/languages/' );
 		}
-		
+
 		/**
 		* Deactivate Pro Plugin if it's not already active
-		* 
+		*
 		* @author Jewel Theme <support@jeweltheme.com>
 		*/
 		public static function copy_to_clipboard_activation_hook() {
@@ -182,7 +184,7 @@ if ( ! class_exists( '\COPYTOCLIPBOARD\Copy_To_Clipboard' ) ) {
 				deactivate_plugins( $plugin );
 			}
 		}
-		
+
 
 		/**
 		 * Returns the singleton instance of the class.

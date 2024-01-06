@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Plugin Name: copy-to-clipboard
+ * Plugin Name: Copy to Clipboard
  * Plugin URI:  https://jeweltheme.com/copy-to-clipboard
  * Description: Text Copy to Clipboard on WordPress way
  * Version:     1.0.2
