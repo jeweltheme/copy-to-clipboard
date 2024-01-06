@@ -65,7 +65,7 @@ class Admin_Menu {
         echo '<div id="copy-to-clipboard-builder"></div>';
     }
 
-    public function copy_to_clipboard_settings_page(){
+    public function copy_to_clipboards_page(){
         echo '<div id="copy-to-clipboards"></div>';
     }
 
