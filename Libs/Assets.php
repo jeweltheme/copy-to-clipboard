@@ -24,8 +24,14 @@ if ( ! class_exists( 'Assets' ) ) {
 		public function __construct() {
 			add_action( 'wp_enqueue_scripts', array( $this, 'copy_to_clipboard_enqueue_scripts' ), 100 );
 			add_action( 'admin_enqueue_scripts', array( $this, 'copy_to_clipboard_admin_enqueue_scripts' ), 100 );
+
+			add_action('init', array($this, 'copy_to_clipboard_register_block'));
 		}
 
+		public function copy_to_clipboard_register_block(){
+            $asset_file = include(COPYTOCLIPBOARD_PATH . 'assets/blocks/copy-to-clipboard/index.asset.php');
+            wp_register_script('copy-to-clipboard-block', COPYTOCLIPBOARD_PATH . 'assets/blocks/copy-to-clipboard/index.js', $asset_file['dependencies'], $asset_file['version'], true);
+		}
 
 		/**
 		 * Get environment mode
@@ -58,7 +64,7 @@ if ( ! class_exists( 'Assets' ) ) {
 		 */
 		public function copy_to_clipboard_admin_enqueue_scripts() {
 			// CSS Files .
-			wp_enqueue_style( 'copy-to-clipboard-admin', COPYTOCLIPBOARD_ASSETS . 'css/copy-to-clipboard-admin.css', array( 'dashicons' ), COPYTOCLIPBOARD_VER, 'all' );
+			wp_enqueue_style( 'copy-to-clipboard-admin', COPYTOCLIPBOARD_ASSETS . 'admin/css/copy-to-clipboard-admin.min.css', array( 'dashicons' ), COPYTOCLIPBOARD_VER, 'all' );
 
 			// JS Files .
 			wp_enqueue_script( 'copy-to-clipboard-admin', COPYTOCLIPBOARD_ASSETS . 'js/copy-to-clipboard-admin.js', array( 'jquery' ), COPYTOCLIPBOARD_VER, true );

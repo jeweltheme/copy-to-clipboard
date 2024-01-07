@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "copy-to-clipboard/copy-to-clipboard",
+    "version": "1.0.0",
+    "title": "Copy To Clipboard",
+    "category": "embed",
+    "description": "Allows embed maps in your contents, good alternative to Google Maps without the need for api key",
+    "keywords": ["copy to clipboard", "clipboard"],
+    "attributes": {},
+    "supports": {
+        "html": false,
+        "align": ["wide", "full"],
+        "alignWide": true
+    },
+    "textdomain": "copy-to-clipboard",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:../../admin/css/copy-to-clipboard-editor.min.css",
+    "style": ["copy-to-clipboard-block"],
+    "viewScript": ["copy-to-clipboard-block"]
+}

@@ -19,6 +19,7 @@ defaultConfig.output = {
 
 defaultConfig.entry = {
     "js/copy-to-clipboard-admin": "./dev/js/copy-to-clipboard-admin.js",
+    "blocks/copy-to-clipboard/index": "./src/blocks/copy-to-clipboard/index.js",
     // "js/darken": "./dev/darken",
     // "js/darken-frontend": "./dev/darken",
 };
@@ -84,6 +85,20 @@ const assetsConfig = {
         //         .sync("./src/blocks/**/**/*style.scss")
         //         .map((path) => "./" + path.replace("./", "")),
         // ],
+
+        // All blocks editor css including common
+        "admin/css/copy-to-clipboard-editor": [
+            // Block common editor css
+            ...glob
+                .sync("./src/blocks/**/**/*editor.scss")
+                .map((path) => "./" + path.replace("./", "")),
+            // return glob.sync("./src/blocks/**/**/*style.scss").map( path => {
+
+            // All blocks editor css
+            // ...glob
+            //     .sync('./src/blocks/**/**/*editor.scss')
+            //     .map((path) => './' + path.replace('./', '')),
+        ],
 
         // Public CSS
         "public/css/copy-to-clipboard-frontend": glob
