@@ -126,8 +126,8 @@
             border: 0;
             position: fixed;
             z-index: 99999;
-            -webkit-box-shadow: 0px 0px 54px 0px rgb(20 20 42 / 30%) !important;
-            box-shadow: 0px 0px 54px 0px rgb(20 20 42 / 30%) !important;
+            -webkit-box-shadow: 0px 0px 54px 0px rgb(20, 20, 42, 30%) !important;
+            box-shadow: 0px 0px 54px 0px rgb(20, 20, 42, 30%) !important;
 
             .copy-to-clipboard-notice-dismiss {
                 box-shadow: none;
@@ -460,7 +460,7 @@
         align-items: flex-end;
         justify-content: center;
         border-radius: 3px;
-        box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+        box-shadow: 0 0 10px 0 rgb(0, 0, 0, 50%);
     }
 
     .copy-to-clipboard-popup-modal-close {

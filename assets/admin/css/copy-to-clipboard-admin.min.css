@@ -52,10 +52,10 @@
   margin: 6px 10px 0px -3px !important;
 }
 .copy-to-clipboard .copy-to-clipboard-recommended-wrapper .plugin-status-active {
-  color: #00BA88;
+  color: #00ba88;
 }
 .copy-to-clipboard .copy-to-clipboard-recommended-wrapper .plugin-status-inactive {
-  color: #F4B740;
+  color: #f4b740;
 }
 .copy-to-clipboard .copy-to-clipboard-recommended-wrapper .plugin-status-not-install {
   color: #1d2327;
@@ -117,7 +117,7 @@
 }
 .copy-to-clipboard .upgrade-pro-popup .upst-body .content-body h4 {
   display: flex;
-  color: #FB0066;
+  color: #fb0066;
   margin-bottom: 10px;
   letter-spacing: 1px;
   gap: 10px;
@@ -125,7 +125,7 @@
   line-height: 32px;
 }
 .copy-to-clipboard .upgrade-pro-popup .upst-body .content-body h3 {
-  color: #14142B;
+  color: #14142b;
   letter-spacing: 1px;
   font-size: 28px;
 }
@@ -159,7 +159,7 @@
   left: 1px;
 }
 .copy-to-clipboard .upgrade-pro-popup .upst-body .content-body ul li span {
-  color: #14142B !important;
+  color: #14142b !important;
 }
 .copy-to-clipboard .upgrade-pro-popup .upst-body .content-body .upgrade-btn {
   background: #0347ff;
@@ -210,11 +210,11 @@
   color: rgba(78, 75, 102, 0.72) !important;
 }
 .copy-to-clipboard .upgrade-pro-popup .upst-footer ul li a:hover {
-  color: #0347FF !important;
+  color: #0347ff !important;
 }
 .copy-to-clipboard .upgrade-pro-popup .upst-footer ul li:before {
   font-size: 22px;
-  color: #00BA88;
+  color: #00ba88;
 }
 .copy-to-clipboard .copy-to-clipboard-notice-plugin-popup .copy-to-clipboard-notice-dismiss {
   border: 0 !important;
@@ -521,7 +521,7 @@
 .copy-to-clipboard .copy-to-clipboard-popup-countdown-time > div > span:nth-child(2) {
   font-size: 12px;
   font-weight: 500;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.8);
 }
 .copy-to-clipboard .copy-to-clipboard-popup-countdown-time > span {
   font-size: 50px;

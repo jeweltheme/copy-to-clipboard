@@ -15,7 +15,7 @@
   \*******************************************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://copy-to-clipboard/./dev/js/copy-to-clipboard-admin.js?");
+eval("alert(\"Copy to clipboard\");\n\n//# sourceURL=webpack://copy-to-clipboard/./dev/js/copy-to-clipboard-admin.js?");
 
 /***/ })
 

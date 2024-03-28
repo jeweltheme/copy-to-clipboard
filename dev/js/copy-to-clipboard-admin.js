@@ -1,0 +1,1 @@
+alert("Copy to clipboard");
